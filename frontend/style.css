@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222; /* Fundo escuro */
+  position: relative; /* Para usar position absolute nos botões */
+
+  overflow: hidden;
+}
+
+#eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha os olhos verticalmente */
+}
+
+.leftEye {
+  position: absolute;
+  left: 80px;
+
+}
+
+.rightEye {
+  position: absolute;
+  right: 80px;
+}
+
+.button-container {
+  position: absolute; /* Posiciona os botões acima do olho */
+  top: -50px; /* Distância acima do olho */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar */
+  display: flex;
+  flex-direction: row; /* Botões lado a lado */
+  justify-content: center; /* Centraliza os botões */
+}
+
+.button {
+  background-color: #444; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 50%; /* Faz os botões redondos */
+  width: 50px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+  font-size: 20px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background-color 0.3s; /* Animação suave */
+  display: flex; /* Para usar alinhamento flexível */
+  justify-content: center; /* Centraliza o conteúdo do botão */
+  align-items: center; /* Centraliza o conteúdo do botão verticalmente */
+  margin: 5px; /* Espaçamento entre os botões */
+}
+
+.button:hover {
+  background-color: #666; /* Muda a cor ao passar o mouse */
+}
+
+.button:active {
+  background-color: #888; /* Muda a cor quando clicado */
+}

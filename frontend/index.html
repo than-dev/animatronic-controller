@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Olhos 3D</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="eyes">
+        <div class="leftEye">
+            <div class="button-container">
+                <button class="button" id="leftEyeRight">←</button>
+                <button class="button" id="leftEyeLeft">→</button>
+            </div>
+        </div>
+        <div class="rightEye">
+            <div class="button-container">
+                <button class="button" id="rightEyeRight">←</button>
+                <button class="button" id="rightEyeLeft">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="scene.js" defer></script>
+    <script src="eye.js" defer></script>
+    <script src="servo.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
